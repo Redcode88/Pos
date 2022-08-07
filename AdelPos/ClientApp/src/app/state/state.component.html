@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>state Data</h1>
+
+<table class="table table-striped">
+<thead>
+    <tr>
+     <th>State Id</th>
+     <th>State Name</th>
+     <th>Action</th>
+    </tr>
+</thead>
+    <tbody>
+        
+            <tr *ngFor="let obj of stateData;">
+                <th>{{obj.ID}}</th>
+                <th>{{obj.Name}}</th>
+                <th><button type="button" ngbAutofocus class="btn btn-danger" (click)="modal.close()">Edit</button><button>Delete</button></th>
+            </tr>
+                
+    </tbody>
+
+</table>
+
+</div>
